@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Web Basic</title>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/style.css">
+    <script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <form role="form" id="calculate-form">
+                    <div class="form-group">
+                        <label for="input-x">X</label>
+                        <input type="number" class="form-control" id="input-x" placeholder="Enter a number" data-bv-field="number">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-y">Y</label>
+                        <input type="number" class="form-control" id="input-y" placeholder="Enter a number" data-bv-field="number">
+                    </div>
+                    <button type="button" class="btn btn-default btn-primary add">Add</button>
+                    <button type="button" class="btn btn-default btn-primary subtract">Subtract</button>
+                </form>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 output">
+                    <script id="display" type="text/x-handlebars-template">
+                        <span class="output-template">{{x}} {{operation}} {{y}} equals {{total}}</span>
+                    </script>
+                <span class="error" style="display:none">You must enter a valid number</span>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+.container{padding-top: 25px;}
+.form-control{width:90%; margin-left: 2%; display: inline-block;}
+.output{margin-top: 10px; font-weight: bold; text-align: center;}
+.error{color:red;}
